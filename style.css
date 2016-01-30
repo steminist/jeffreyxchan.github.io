@@ -1,0 +1,44 @@
+h1, h2, h3 {
+    text-align: center;
+    color: deepskyblue;
+    font-family: Lobster;
+}
+
+h4, h5, h6{
+    text-align: left;
+    font-family: Lobster;
+}
+
+p {
+    font-size: 14px;
+    text-align: left;
+    font-family: Garamond;
+}
+
+hr {
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    border-color: deepskyblue;
+    border-width: 3px;
+}
+
+#directory {
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    margin: auto;
+    padding: auto;
+}
+
+li {
+    font-family: Verdana;
+    border-color: lightskyblue;
+    border-style: solid;
+    border-width: 2px;
+    padding: auto;
+    float: left;
+    text-align: center;
+}
