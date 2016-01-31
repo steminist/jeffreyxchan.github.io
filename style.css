@@ -9,6 +9,11 @@ h4, h5, h6{
     font-family: Lobster;
 }
 
+h7 {
+    font-family: Calibri;
+    font-size: 18;
+}
+
 p {
     font-size: 14px;
     text-align: left;
@@ -23,6 +28,11 @@ hr {
     border-width: 3px;
 }
 
+.member{
+    color: black;
+    font-family: Calibri;
+    font-size: 10;
+}
 #directory {
     text-align: center;
 }
