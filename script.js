@@ -1,14 +1,48 @@
 $(document).ready(function(){
-    var showing = true;
-   $('#mission-statement').click(function(){
-        if (showing == true){
-         $('#mission-statement-content').hide();
-            showing = false;
-        }
-        else {
-            $('#mission-statement-content').show();
-            showing=true;
-        }   
-
-   });
+    $(document).ready(function() {
+       $("#impact-content").hide(); 
+        $("#officers-content").hide();
+        $("#involved-content").hide();
+        $("#member-ot-month-content").hide();
+    });
+    
+    $("#mission-statement").click(function() {
+       $("#mission-statement-content").show();
+        $("#impact-content").hide();
+        $("#officers-content").hide();
+        $("#involved-content").hide();
+        $("#member-ot-month-content").hide();
+    });
+    
+    $("#impact").click(function() {
+        $("#mission-statement-content").hide();
+        $("#impact-content").show();
+        $("#officers-content").hide();
+        $("#involved-content").hide();
+        $("#member-ot-month-content").hide();
+    });
+    
+    $("#officers").click(function() {
+       $("#mission-statement-content").hide();
+        $("#impact-content").hide();
+        $("#officers-content").show();
+        $("#involved-content").hide();
+        $("#member-ot-month-content").hide();
+    });
+    
+    $("#involved").click(function() {
+        $("#mission-statement-content").hide();
+        $("#impact-content").hide();
+        $("#officers-content").hide();
+        $("#involved-content").show();
+        $("#member-ot-month-content").hide();
+    });
+    
+    $("#member-ot-month").click(function() {
+        $("#mission-statement-content").hide();
+        $("#impact-content").hide();
+        $("#officers-content").hide();
+        $("#involved-content").hide();
+        $("#member-ot-month-content").show();
+    });
 });
