@@ -4,59 +4,77 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css">
 	<title>UCLA ACM-W</title>
 	<meta charset='UTF-8' />
-	<link href='https://cdnjs.cloudflare.com/ajax/libs/foundation/6.1.2/foundation.css' rel='stylesheet' type='text/css'/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>   
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/foundation/6.1.2/foundation.css' rel='stylesheet' type='text/css'/>
+<!--    <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js" rel="stylesheet" type='text/css' />-->
 	<link href='style.css' rel='stylesheet' type='text/css' />
     <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+    <script src='script.js' type='text/javascript'></script>
 </head>
 <body>
+    <!-- Header Stuff -->
     <div class="row">
         <div class="small-12 columns">
             <h1 id="title"><a href="index.html">ACM - W</a></h1>
             <hr />
         </div>
     </div>
+    <!-- Top Half of Website -->
     <div class="row">
+    <!-- ACM - W Picture -->
         <div class="small-7 columns">
             <img title="Club Picture 2015" src="https://scontent.xx.fbcdn.net/hphotos-xft1/v/t1.0-9/64778_1533747246898160_3556462291586283318_n.jpg?oh=a8fc79a4270309c5cf9480f9cd82aba5&oe=5743B5B9"></img>
         </div>
     <!-- Upcoming Events Sidebar -->
         <div class="small-5 columns">
+            <div id="upcoming-events">
             <h2><b />Upcoming Events</h2>
             <ul>
                 <li><h5>SpaceX Tour Infosession 1/25/16</h5><p>Boelter 2763 <br /> Come out and learn more about career opportunities at SpaceX. Bring your resumes and your radiant smile!</p></li>
                 <li><h5>Evening with Industry Thursday 1/28/16</h5><p>Carnesale Commons - Palisade Room <br />Network with recruiters over appetizers, a three-course meal, and a private carrer fair for a chance to land that dream job. Comes with a free raffle ticket for prizes donated by the companies themselves. Dress code is business formal. Tickets sold in Boelter Hall near SEAS Cafe.</p></li>
                 <li><h5>Karaoke Night! 2/14/16</h5><p>747 Gayley Avenue <br> Please, please, please don't sing Let it Go! Other than that, sing yo heart out, girls, becuase midterms. are. over!</p></li>
             </ul>
+            </div>
         </div>
     </div>
+    <!-- Tabs -->
     <div class="row">
         <div class="small-12 columns">
             <ul class="button-group even-4">
-                <li><button type="button" class="button">Mission Statement</button></li>
-                <li><button type="button" class="button">Our Impact</button></li>
-                <li><button type="button" class="button">Meet the Officers</button></li>
-                <li><button type="button" class="button">How to Get Involved!</button></li>
-                <li><button type="button" class="button">Member of the Month</button></li>
+                <li><button type="button" class="button" id="mission-statement">Mission Statement</button></li>
+                <li><button type="button" class="button" id="impact">Our Impact</button></li>
+                <li><button type="button" class="button" id="officers">Meet the Officers</button></li>
+                <li><button type="button" class="button" id="involved">How to Get Involved!</button></li>
+                <li><button type="button" class="button" id="member-ot-month">Member of the Month</button></li>
             </ul>
         </div>
     </div>
     <div class="row">
         <div class="small-12 columns">
-            <h3 style="font-family: Calibri;"><b />WE. ARE. ACM-W.</h3>
-            <p id="tab-contents">UCLA ACM-W is one of the committees amongst the larger <a href="http://acm.cs.ucla.edu/">ACM</a> organization on campus. ACM-W is a community of women intent on pursuing a career or interest in computing and technology. We host programs and offer resources to engage more women and advance their contributions to technology.</p>
-            <h3 style="font-family: Calibri;"><b />Why we're so Awesome</h3>
-            <p id="tab-contents">TODO: Insert some descriptions of past events and achievements that make ACM-W stand out</p>
+            <!-- mission statement content -->
+            <div id="mission-statement-content">
+                <h3 style="font-family: Calibri;"><b />WE. ARE. ACM-W.</h3>
+                <p id="tab-contents">UCLA ACM-W is one of the committees amongst the larger <a href="http://acm.cs.ucla.edu/">ACM</a> organization on campus. ACM-W is a community of women intent on pursuing a career or interest in computing and technology. We host programs and offer resources to engage more women and advance their contributions to technology.</p>
+            </div>
+            <!-- impact content -->
+            <div id="impact-content">
+                <h3 style="font-family: Calibri;"><b />Why we're so Awesome</h3>
+                <p id="tab-contents">TODO: Insert some descriptions of past events and achievements that make ACM-W stand out</p>
+            </div>
+            <!-- officers content -->
+            <div id="officers-content">
             <h3 style="font-family: Calibri;"><b />The Fam</h3>
             <p id="tab-contents">TODO: Insert pictures and respective position of the officers in ACM-W</p>
+            </div>
+            <!-- involved content -->
+            <div id="involved-content">
             <h3 style="font-family: Calibri;"><b />Join Us</h3>
             <p id="tab-contents">Want to join ACM-W and begin supporting fellow female engineers?<br>Come to our next meeting and meet some of the officers. We promise they're friendly. Once you meet 3 officers, you'll be officially in the organization.</p>
-        </div>
-    </div>
-    <div class="row">
-        <div class="small-12 columns">
+            </div>
+            <!-- Member of the Month Content -->
+            <div id="member-ot-month-content">
             <h3 style="font-family: Calibri;"><b />Member of the Month</h3>
-        </div>
-        <div class="small-5 columns">
+            <div class="small-5 columns">
             <img src="https://scontent.xx.fbcdn.net/hphotos-xtp1/v/t1.0-9/10599145_10206181264864981_5339314493305076727_n.jpg?oh=d09a76aed051d71f2deec3511eebac79&oe=573C9B5F" height="200" width="200"></img>
         </div>
         <div class="small-7 columns"><h7><strong>Apurva Panse, Class of 2018</strong></h7>
@@ -66,10 +84,10 @@
                 <li class="member"> Girls Who Code instructor </li>
             </ul>
         </div>
+        </div>
+        </div>
     </div>
-	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.js'></script>
-  
-	<script src='script.js'></script>
+<!--	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.js'></script>-->
 
 </body>
 </html>
