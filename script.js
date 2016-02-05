@@ -1,9 +1,14 @@
 $(document).ready(function(){
+    var showing = true;
    $('#mission-statement').click(function(){
-      $('#mission-statement-content').hide(); 
+        if (showing == true){
+         $('#mission-statement-content').hide();
+            showing = false;
+        }
+        else {
+            $('#mission-statement-content').show();
+            showing=true;
+        }   
+
    });
-   
-    $('#mission-statement').click(function() {
-        $('#mission-statement-content').show();
-    });
 });
