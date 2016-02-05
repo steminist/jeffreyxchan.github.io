@@ -57,6 +57,7 @@ li {
 }
 
 #upcoming-events {
+    max-height: 490px;
     overflow-y: scroll;
 }
 
@@ -64,10 +65,13 @@ li.tab a {
     font-family: Verdana;
     font-size: 18px;
     text-align: center;
-    padding: 10px 26px;
+    padding: 10px 25px;
     display: inline-block;
     background-color: deepskyblue;
     color: white;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #229ec7;
 }
 
 li.tab a:hover {
