@@ -1,3 +1,8 @@
+var answer = prompt("Which famous computer scientist coined the term 'debugging'?")
+while (answer != "Grace Hopper") {
+    var answer = prompt("Which famous computer scientist coined the term 'debugging'?")
+}
+
 $(document).ready(function(){
     $(document).ready(function() {
        $("#impact-content").hide(); 
