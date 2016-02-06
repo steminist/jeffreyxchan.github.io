@@ -1,17 +1,25 @@
-h1, h2, h3 {
+h1 {
     text-align: center;
-    color: deepskyblue;
-    font-family: Lobster;
+    color: #0099CC;
+    font-family: Sigmar One
+}
+
+
+h2, h3 {
+    text-align: center;
+    color: #0099CC;
+    font-family: Sigmar One;
 }
 
 h4, h5, h6{
     text-align: left;
-    font-family: Lobster;
+    font-family: Pacifico;
 }
 
 h7 {
     font-family: Calibri;
     font-size: 18;
+    font-style: bold;
 }
 
 p {
@@ -24,7 +32,7 @@ hr {
     margin-top: auto;
     margin-left: auto;
     margin-right: auto;
-    border-color: deepskyblue;
+    border-color: #00CCCC;
     border-width: 3px;
 }
 
@@ -61,19 +69,23 @@ li {
     overflow-y: scroll;
 }
 
-li.tab a {
-    font-family: Verdana;
-    font-size: 18px;
+.small-7-columns {
     text-align: center;
-    padding: 10px 25px;
+}
+
+li.tab a {
+    font-family: Calibri;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px 20px;
     display: inline-block;
-    background-color: deepskyblue;
+    background-color: #00CCCC;
     color: white;
     border-style: solid;
     border-width: 1px;
-    border-color: #229ec7;
+    border-color: #00CCCC;
 }
 
 li.tab a:hover {
-    background-color: #1ea8d6;
+    background-color: #0099CC;
 }
